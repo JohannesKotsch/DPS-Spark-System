@@ -24,7 +24,7 @@ object SimpleApp extends App {
       .textFileStream("s3a://deutsche-boerse-xetra-pds/2021-01-11/")
 
 //    lines.filter(line => line.contains("a")).count().print()
-    lines.foreachRDD(rdd => rdd.filter(line => line.contains("A")).count())
+//    lines.foreachRDD(rdd => rdd.filter(line => line.contains("A")).count())
 
 
     ssc.start() // Start the computation
